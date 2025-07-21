@@ -5,7 +5,8 @@ mod math;
 use windows::Win32::Foundation::{HWND, HINSTANCE};
 pub mod vk_windows;
 
-use math::expr::*;
+pub mod expr;
+use expr::*;
 
 use vk_windows::*;
 use vulkan::*;
