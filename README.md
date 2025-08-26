@@ -1,7 +1,11 @@
-This experimental project is a physics engine that utilizes all of calculus, linear algebra, numerical analysis, physics, and Vulkan to optimize our GPUs to its limits (essentially I am using the theories of calculus). In other words, I will use more advanced mathematics and physics, so that the equations are put onto SIMD instructions.
+Project: An experimental physics engine that calculates everything on the GPU by flattening all equations onto the SIMD instruction set (aka. compute shaders) rather than using the SIMT instruction set (aka. Cuda).
 
 Hopefully, some of the demos will be created by the end of the year. One demo will show millions of particles on the screen using an AMD card and a decade old laptop. Another demo will show the physics engine import an OBJ model, and apply physics on the model (converting into the proper topology first). A third demo will create fire, smoke, dust, and weather related simulations.
 
-Update August 14: Changing the first demo to inputting a math function and outputting its derivative in symbolic form (not its approximation as many libraries basically use). Basically, it's a smaller project to Mathematica and MATLAB. Further, the first stage of this project requires me to learn data structures and algorithms the hard way, and maybe even learn linear algebra. That's 1000+ pages of material. This stage is crucial for that performance gain on the GPU (and possibly other things too). So, a demo may not come until November.
+Stages of the project
+Stage 1 (October - November): Build a function that outputs the derivative (symbolically) of a math function. Integrals might come late after learning some complex anaylsis.
+Stage 2 (December): Build a numerical analysis library.
+Stage 3 (Next year): Build the skeleton of the physics engine.
+Stage 4 (Mid/late next year): Build demos.
 
-Update August 23: Half way through my linear algebra book. Linear algebra leans heavily on definitions, and the explanations on the definitions isn't very well documented via internet. Some video channels do go over them up to an extent, but they are 1 hour long just to cover 1 page from the textbook.
+It might take longer than expected because I haven't learned everything on the subject of math and physics yet.
