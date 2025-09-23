@@ -4,8 +4,10 @@ The first stage is to make a function that takes a math equation and output its 
 
 The second stage is to build the core physics engine, so that developers can interface with it.
 
-The third stage is probably build a render engine.
+The third stage is to build a render engine.
 
-The fourth stage is whatever right now. Probably build a plugin.
+The fourth stage is probably to build a machine learning model on the engine, so we can interface with it using English. The model will not be from PyTorch.
+
+The fourth stage is whatever right now. Probably build a plugin for Unreal and/or Unity.
 
 Timeframes: No idea. Maybe something in December.
