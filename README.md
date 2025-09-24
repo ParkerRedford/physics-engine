@@ -1,3 +1,13 @@
-This graphics library will power a physics simulation that could simulate 1-30 million particles (plus interact with them) with either an AMD, Intel, Nvidia, (or embedded) graphics card. Key takeaway: We don't need a dedicated GPU to simulate PhysX; in fact, PhysX with a dedicated GPU can be a burden.
+Project: A deterministic physics engine that uses an AST/DAG algorithm to create symbolic math to put everthing on the GPU for the SIMD instruction set. The CPU will still be required for some physics stuff (probably collisions) because GPUs can't do conditions well.
 
-I will not open-source that portion of the project because I can see it being highly valued. I will create some demos, apps, and videos to showcase my philosophy.
+The first stage is to make a function that takes a math equation and output its derivative, partial derivative, or integral. I will build a small website app to help debug the equations for later use for the physics engine.
+
+The second stage is to build the core physics engine, so that developers can interface with it.
+
+The third stage is to build a render engine.
+
+The fourth stage is probably to build a machine learning model on the engine, so we can interface with it using English. The model will not be from PyTorch.
+
+The fourth stage is whatever right now. Probably build a plugin for Unreal and/or Unity.
+
+Timeframes: No idea. Maybe something in December.

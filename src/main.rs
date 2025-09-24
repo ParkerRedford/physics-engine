@@ -1,14 +1,19 @@
 mod vulkan;
 mod math;
 
-#[cfg(target_os = "windows")]
 use windows::Win32::Foundation::{HWND, HINSTANCE};
+
 pub mod vk_windows;
+pub mod vk_linux;
+pub mod vk_macos;
 
 pub mod expr;
 use expr::*;
 
 use vk_windows::*;
+use vk_linux::*;
+use vk_macos::*;
+
 use vulkan::*;
 
 fn main() {
@@ -30,6 +35,12 @@ fn main() {
 
     #[cfg(target_os = "windows")]
     run_windows_loop();
+
+    #[cfg(target_os = "linux")]
+    run_linux_loop();
+
+    #[cfg(target_os = "macos")]
+    run_macos_loop();
 
     init_vulkan(hinstance, hwnd);
 }

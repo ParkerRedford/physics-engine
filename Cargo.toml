@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-ash = { version = "0.37.0", features = ["linked"]}
+ash = { version = "0.38.0", features = ["linked"]}
+#wayland-client = "0.31.11"
+#wayland-protocols = "0.32.9"
+#wayland-server = "0.31.10"
 windows = { version = "0.61.1", features = [
     "Win32_Foundation",
     "Win32_Graphics_Gdi",
@@ -14,3 +17,4 @@ windows = { version = "0.61.1", features = [
     "Win32_System_Threading",
     "Win32_Graphics_Dxgi"
 ]}
+x11rb = "0.13.1"
