@@ -1,4 +1,4 @@
-Project: A deterministic physics engine that uses an AST/DAG algorithm to create symbolic math to put everthing on the GPU for the SIMD instruction set. The CPU will still be required for some physics stuff (probably collisions) because GPUs can't do conditions well.
+Project: A deterministic physics engine that uses an AST/DAG algorithm to create symbolic math to put everything on the GPU for the SIMD instruction set. The CPU will still be required for some physics stuff (probably collisions) because GPUs can't do conditions well.
 
 The first stage is to make a function that takes a math equation and output its derivative, partial derivative, or integral. I will build a small website app to help debug the equations for later use for the physics engine.
 
