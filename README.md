@@ -9,5 +9,3 @@ The third stage is to build a render engine.
 The fourth stage is probably to build a machine learning model on the engine, so we can interface with it using English. The model will not be from PyTorch.
 
 The fourth stage is whatever right now. Probably build a plugin for Unreal and/or Unity.
-
-Timeframes: No idea. Maybe something in December.
