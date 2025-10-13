@@ -2,7 +2,7 @@ Project: A deterministic physics engine that uses an AST/DAG algorithm to create
 
 The first stage of the project is to make a function that takes a math equation (both real and complex) and output its derivative, partial derivative, or integral. I will build a small website app to help debug the equations for later use for the physics engine.
 
-There are some problems even with our current symbolic mathematical solutions can't solve. For instance, when I try to ask for the Taylor series for e^x, programs usually give me the Maclurian series instead. Like this.
+There are some problems even with our current symbolic mathematical solutions can't solve. For instance, when I try to ask for the Taylor series for e^x, programs usually give me the Maclaurin series instead. Like this.
 
 <img width="413" height="71" alt="Screenshot 2025-10-13 184710" src="https://github.com/user-attachments/assets/b44b22a4-369b-49e2-8ed8-e03f79500bf2" />
 
@@ -10,7 +10,18 @@ But this is what I am asking for, so I have to manually write the equations myse
 
 <img width="706" height="67" alt="Screenshot 2025-10-13 184700" src="https://github.com/user-attachments/assets/57a875db-db63-4ef8-adb6-74fd143ffb2c" />
 
-My expected goal for this library is to solve that issue.
+Here is another example.
+
+Maclaurin series
+
+<img width="367" height="67" alt="Screenshot 2025-10-13 193320" src="https://github.com/user-attachments/assets/5a1d0cfb-1388-4e66-89a5-397384ee5e19" />
+
+Taylor series centered around a
+
+<img width="733" height="121" alt="Screenshot 2025-10-13 193335" src="https://github.com/user-attachments/assets/f02fe65d-c42e-45da-a7d1-0ede64e2f68a" />
+
+
+If you Google search these examples (or use AI), you will get an accurate solution because these function are well-known and already solved, but sometimes you can get a solution that can be a little off. However, if you put in a custom function into a program (e.g Mathematica), the program will return an overload error. So my end goal for stage one is to not have these shortcomings.
 
 
 The second stage of the project is to build the core physics engine, so that developers can interface with the engine.
