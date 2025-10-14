@@ -2,7 +2,7 @@ Project: A deterministic physics engine that uses an AST/DAG algorithm to create
 
 The first stage of the project is to make a function that takes a math equation (both real and complex) and output its derivative, partial derivative, or integral. I will build a small website app to help debug the equations for later use for the physics engine.
 
-If you Google search these examples (or use AI), you will get an accurate solution because these equations are well-known and already solved by a human, but sometimes you can get a solution that can be a little off from Google searching or using AI. For example, if you put in a custom math equation into a program (e.g Mathematica), the program will return an overload error; furthermore, if you give AI the custom equation, the output will not be correct. So my end goal for stage one is to not have these shortcomings as well as running the app locally rather than through a server.
+If you Google search or use AI to help solve complex analysis problems, then you most likely have to use a paid program to calculate the complex equations. So my end goal for stage one is to not have these shortcomings as well as running the app locally rather than through a server.
 
 
 The second stage of the project is to build the core physics engine, so that developers can interface with the engine.
