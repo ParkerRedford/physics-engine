@@ -21,7 +21,7 @@ Taylor series centered around a
 <img width="733" height="121" alt="Screenshot 2025-10-13 193335" src="https://github.com/user-attachments/assets/f02fe65d-c42e-45da-a7d1-0ede64e2f68a" />
 
 
-If you Google search these examples (or use AI), you will get an accurate solution because these function are well-known and already solved, but sometimes you can get a solution that can be a little off. However, if you put in a custom function into a program (e.g Mathematica), the program will return an overload error. So my end goal for stage one is to not have these shortcomings.
+If you Google search these examples (or use AI), you will get an accurate solution because these equations are well-known and already solved, but sometimes you can get a solution that can be a little off. However, if you put in a custom math equation into a program (e.g Mathematica), the program will return an overload error. So my end goal for stage one is to not have these shortcomings as well as running the app locally rather through a server.
 
 
 The second stage of the project is to build the core physics engine, so that developers can interface with the engine.
