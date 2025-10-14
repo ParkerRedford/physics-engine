@@ -8,6 +8,7 @@ There are some missing components from our current symbolic mathematical solutio
 <img width="367" height="67" alt="Screenshot 2025-10-13 193320" src="https://github.com/user-attachments/assets/138aee2f-ec9f-4788-800e-e797c7a6f19a" />
 
 However, this is what I am asking for.
+
 <img width="706" height="67" alt="Screenshot 2025-10-13 184700" src="https://github.com/user-attachments/assets/cfb9d1a7-7f43-4212-93b0-0db9955bd334" />
 <img width="733" height="121" alt="Screenshot 2025-10-13 193335" src="https://github.com/user-attachments/assets/c9775c90-31b5-4667-b468-c231da7bc806" />
 
