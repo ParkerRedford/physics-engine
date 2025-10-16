@@ -23,4 +23,4 @@ The fourth stage is probably to build a machine learning model on the engine, so
 
 The fourth stage is whatever right now. Probably build a plugin for Unreal and/or Unity.
 
-Timeframes: No idea.
+Timeframes: Project is being postponed. I have exceeded my hours for Satisfactory Academic Progress, so I need to find a job to payoff my federal financial aid loans.
