@@ -1,4 +1,4 @@
-This experimental project is an all neutral GPU-accelerated deterministic physics engine. My hypothesis is to determine whether or not this engine will be able to surpass other physics engines in performance under scientific simulated environments or other known demanding physics tasks. Here are the GPUs I will be testing the engine on: 9800 XTX, 2080 RTX, R9 M380, and Geforce 670M.
+This experimental project is an all neutral GPU-accelerated deterministic physics engine. Research Question: What happens if we compile math equations ourselves, and put them on the GPU? My hypothesis is to determine whether or not this engine will be able to surpass other physics engines in performance under scientific simulated environments or other known demanding physics tasks. Here are the GPUs I will be testing the engines on: 9800 XTX, 2080 RTX, R9 M380, and Geforce 670M.
 
 The first stage of the project is to make a function that takes a math equation (both real and complex) and output its derivative, partial derivative, integral, or Taylor series. I will build a small website app to help debug the equations for later use for the physics engine.
 
