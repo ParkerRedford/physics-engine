@@ -10,6 +10,8 @@ pub mod vk_macos;
 pub mod expr;
 use expr::*;
 
+use math::constants::*;
+
 use vk_windows::*;
 use vk_linux::*;
 use vk_macos::*;
@@ -23,6 +25,12 @@ fn main() {
         c(5 + 9), c(7), mul(vec![c(6), c(2)])
     ]);
 
+    let n = constants::factorial(0);
+    let consts = constants::Constants::new();
+
+    println!("Factorial: {}", n);
+    println!("Euler's constant: {}", consts.E);
+
     // let expr = sub(vec![
     //     mul(vec![c(2), c(3), c(4), c(5)]),
     //     c(3), c(9), c(4)
@@ -34,7 +42,7 @@ fn main() {
     let (hinstance, hwnd) = init_windows();
 
     #[cfg(target_os = "windows")]
-    run_windows_loop();
+    //run_windows_loop();
 
     #[cfg(target_os = "linux")]
     run_linux_loop();
