@@ -41,7 +41,7 @@ The third stage is to build a variety of things related to simulations and FX.
 - [ ] Springs
 - [ ] Blobs
 - [ ] Render engine
-- [ ] Precompute raytracing (if math is available)
+- [ ] Precompute raytracing (if it can be done using mathematics)
 
 # Stage 4
 Not sure yet. Probably build an Unreal/Unity plugin to interface with this engine.
