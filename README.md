@@ -1,6 +1,8 @@
-This experimental project is an all neutral GPU-accelerated deterministic physics engine. Research Question: What happens if we compile math equations ourselves, and put them on the GPU? My hypothesis is to determine whether or not this engine will be able to surpass other physics engines in performance under scientific simulated environments or other known demanding physics tasks. Here are the GPUs I will be testing the engines on: 9800 XTX, 2080 RTX, R9 M380, Geforce 670M, and Intel UHD Graphics 620.
+# Intro and Why
+This project is mainly experimental. I read that physics engines use Euler's or Runge-Kutta 4 methods to simulate physics. Both methods are computationally heavy where Euler can require 15,000 FLOPs whereas 60,000 FLOPs for RK4 for each particle, dot, or object; on top of that, both methods are non-deterministic. I believe I can reduce that count down to around 300-1000 FLOPs max by having the physics engine actually solve these math equations symbolically to precompute everything from kinematics, graphics, and special effects at runtime. If the engine can't find a closed-form of an integral, it'll use a complex analysis or a numerical analysis pathway to keep the FLOP count low. I don't know what this project can do except acheive higher performance rates. Here are the GPUs I will be testing on to compare and contrast these physics engines: 9800 XTX, 2080 RTX, R9 M380, Geforce 670M, and Intel UHD Graphics 620.
 
-The first stage of the project is to make a function that takes a math equation (both real and complex) and output its derivative, partial derivative, integral, or Taylor series. I will build a small website app to help debug the equations for later use for the physics engine.
+# Stage 1
+The first stage of the project is to make a function that takes a math equation (both real and complex) and output its derivative, partial derivative, or integral. I will build a small website app to help debug the equations for later use for the physics engine.
 
 There are some missing components from our current symbolic mathematical solutions where there is a solution from academia. One such missing component is regarding with the Taylor and Macluarin series. When I use Google, AI, or Mathematic the best they give me is the Macluarin seires of a math equation instead of the Taylor series. Here are a few examples of the ones they give me.
 
@@ -14,13 +16,13 @@ However, this is what I am asking for.
 
 Yes, you can get the correct Taylor series of these two equations from Google or AI, but the example equations are well-known and are already solved by a human. Custom equations are generally inaccurate from Google and AI; they tend to switch to the Macluarin series (and sometimes still inaccurate) because I believe the Taylor series too complicated for these engines. Mathematica gave me an overload error on the Taylor series, so that is not very helpful. I tend for this project to be the solution to that problem, and have it run locally and directly put into the physics engine itself. Furthermore, complex analysis functions aren't wildly available, so I want to implement them too. They can help solve the improper integrals too, so that is a plus.
 
-
+# Stage 2
 The second stage of the project is to build the core physics engine, so that developers can interface with the engine.
 
-The third stage is to build a render engine.
+# Stage 3
+The third stage is to build a particle system, fluid dynamics, render engine, soft-body system, rigid body system, springs, blobs, and anything FX related. If raytracing can be precomputed, I'll try that too.
 
-The fourth stage is probably to build a machine learning model on the engine, so we can interface with it using English. The model will not be from PyTorch.
-
-The fourth stage is whatever right now. Probably build a plugin for Unreal and/or Unity.
+# Stage 4
+Not sure yet. Probably build an Unreal/Unity plugin to interface with this engine.
 
 Timeframes: No idea.
