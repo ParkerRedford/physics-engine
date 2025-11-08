@@ -16,11 +16,32 @@ However, this is what I am asking for.
 
 Yes, you can get the correct Taylor series of these two equations from Google or AI, but the example equations are well-known and are already solved by a human. Custom equations are generally inaccurate from Google and AI; they tend to switch to the Macluarin series (and sometimes still inaccurate) because I believe the Taylor series too complicated for these engines. Mathematica gave me an overload error on the Taylor series, so that is not very helpful. I tend for this project to be the solution to that problem, and have it run locally and directly put into the physics engine itself. Furthermore, complex analysis functions aren't wildly available, so I want to implement them too. They can help solve the improper integrals too, so that is a plus.
 
+- [ ] Derivative
+- [ ] Partial derivative
+- [ ] Integral
+- [ ] Taylor series
+- [ ] Complex analysis
+- [ ] Numerical analysis
+  - [ ] Chebyshev
+
 # Stage 2
 The second stage of the project is to build the core physics engine, so that developers can interface with the engine.
 
+- [ ] Classical mechanics
+- [ ] Energy
+- [ ] Thermodynamics
+- [ ] Lights and optics
+
 # Stage 3
-The third stage is to build a particle system, fluid dynamics, render engine, soft-body system, rigid body system, springs, blobs, and anything FX related. If raytracing can be precomputed, I'll try that too.
+The third stage is to build a variety of things related to simulations and FX.
+- [ ] Particle system
+- [ ] Fluid dynamics
+- [ ] Soft-body system
+- [ ] Rigid-body system
+- [ ] Springs
+- [ ] Blobs
+- [ ] Render engine
+- [ ] Precompute raytracing (if math is available)
 
 # Stage 4
 Not sure yet. Probably build an Unreal/Unity plugin to interface with this engine.
