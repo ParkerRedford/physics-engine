@@ -18,11 +18,16 @@ Yes, you can get the correct Taylor series of these two equations from Google or
 
 Another missing component is that CAS (computer algebra system) programs don't typically allow you to input custom variables like that 'a' from the first example. They usually only allow the input variable function like 'x' and constant variables such as e, pi, or a custom constant variable. The CAS program doesn't output custom letter variables from a derivative or integral; instead, it outputs the number that contains the value of the variables.
 
-- [ ] Derivative
-- [ ] Partial derivative
-- [ ] Integral
-- [ ] Taylor series
+- [ ] Real analysis
+  - [ ] Derivative
+  - [ ] Partial derivative
+  - [ ] Integral
+  - [ ] Taylor series
 - [ ] Complex analysis
+  - [ ] Gaussian
+  - [ ] Error function
+  - [ ] Signum function
+  - [ ] Cauchy-Riemann
 - [ ] Numerical analysis
   - [ ] Chebyshev
 
@@ -36,6 +41,7 @@ The second stage of the project is to build the core physics engine, so that dev
 
 # Stage 3
 The third stage is to build a variety of things related to simulations and FX.
+
 - [ ] Particle system
 - [ ] Fluid dynamics
 - [ ] Soft-body system
@@ -43,7 +49,7 @@ The third stage is to build a variety of things related to simulations and FX.
 - [ ] Springs
 - [ ] Blobs
 - [ ] Render engine
-- [ ] Precompute raytracing (if it can be done using mathematics)
+- [ ] Scene-as-math for Signed Distance Functions (rendering technique)
 
 # Stage 4
 Not sure yet. Probably build an Unreal/Unity plugin to interface with this engine.
